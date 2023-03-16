@@ -1,0 +1,36 @@
+parallax efect
+
+/* CSS */ 
+ .parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+ <!--- HTML -->
+ <div class="parallax">
+  <div class="parallax-text">
+    <h1>Título del efecto parallax</h1>
+    <p>Algunos textos adicionales aquí</p>
+  </div>
+  <img src="ruta/a/la/imagen.jpg" alt="Imagen de fondo">
+</div>
