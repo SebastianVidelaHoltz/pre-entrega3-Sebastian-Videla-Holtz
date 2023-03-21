@@ -6,56 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/parallax.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="titulo-index"><h1>Coffee, that's it☕</h1></div>
-    <nav class="navbar navbar-expand-lg bg-orange">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-          <ul class="navbar-nav text-center row">
-            <li class="nav-item col">
-              <a class="nav-link text-uppercase" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item col">
-              <a class="nav-link text-uppercase" href="Métodos.html">Métodos</a>
-            </li>
-            <li class="nav-item col">
-              <a class="nav-link text-uppercase" href="Variedades.html">Variedades</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    
-  </header>
+ <header class="parallax-header">
+  <!--container-->
+  <div class="container">
+    <div class="header-content">
+      <a href="#">
+        <img src="./media/cafe-logo.png" alt="logo" width="200px" class="d-block mx-auto">
+      </a>
+      <h1 class="text-center text-dark parallax">Coffee, That's it</h1>
+    </div>
+  </div>
+<!--fin container-->
 </header>
-<!--Objetivo de la página-->
-<main>
-  
-    <section>
-    
-      <div class="row">
-        <h2 class="title-obj col-1">Objetivo de este sitio</h2>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg bg-orange">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center row">
+        <li class="nav-item col">
+          <a class="nav-link text-uppercase" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link text-uppercase" href="Métodos.html">Métodos</a>
+        </li>
+        <li class="nav-item col">
+          <a class="nav-link text-uppercase" href="Variedades.html">Variedades</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-      <p class="parrafo-obj">El objetivo de nuestra página sobre café es proporcionar información detallada sobre los productos de café de alta calidad, así como compartir nuestra pasión por el café con nuestros visitantes.</p></div>
-  </section>
-  <!--Que es? Historia-->
-  <section class="seccion-queEs">
-    <h2>Que es el café? Origenes y un poco de su historia</h2>
-    <div class="p1">
-      <p>El café es una bebida aromática y estimulante hecha a partir de granos tostados y molidos de la planta de café. La planta de café es originaria de África, pero actualmente se cultiva en muchas regiones del mundo, especialmente en América Central y del Sur, África y Asia.
-        Aunque no se conoce el origen exacto del café, todas las teorías sitúan su aparición en la actual Etiopía. A partir de ahí, el uso del café se fue extendiendo. Sin embargo, no fue hasta bien entrado el siglo XII cuando este comenzó a consumirse de forma habitual en Arabia. Al principio, el café estaba considerado una bebida religiosa. Luego pasó a ser un estimulante que los guerreros tomaban en la batalla para que les diera fuerza y vigor, al mismo tiempo que se pensaba que tenía mágicos poderes medicinales. Finalmente, ya en el siglo XVI, acabó por convertirse en la bebida social por excelencia del mundo árabe.
-        
-        El comercio y las peregrinaciones contribuyeron a que el cultivo de café llegara a Europa en el siglo XV y, desde allí, viajó a las colonias de América, implantándose en numerosas zonas de Sudamérica, área que se ha convertido actualmente en uno de los principales productores de esta bebida. El salto a Asia se produjo gracias a los holandeses, que llevaron la planta del cafeto a una de sus colonias, concretamente a Java.
-      </p></div>
-  </section>
-</main>
+<div class="container">
+  <div class="content row">
+    <!--Left-->
+    <div class="col-md-6 left">
+      <h1 class="primary-color h2">Nuestro objetivo</h1>
+      <p class="fs-3">
+        El objetivo de nuestra página sobre café es proporcionar información detallada sobre los productos de café de alta calidad, así como compartir nuestra pasión por el café con nuestros visitantes.
+      </p>
+    </div>
+    <!--left end-->
+    <!--right-->
+    <div class="col-md-6 right">
+      <img src="./media/havest.jpg" alt="harvest" class="w-100 rounded">
+    </div>
+  </div>
+  <div class="content row">
+    <!--Left-->
+    <div class="col-md-6 right">
+      <h1 class="primary-color h2">Un poco de historia</h1>
+      <p class="fs-3">
+        El objetivo de nuestra página sobre café es proporcionar información detallada sobre los productos de café de alta calidad, así como compartir nuestra pasión por el café con nuestros visitantes.
+      </p>
+    </div>
+    <!--left end-->
+    <!--right-->
+    <div class="col-md-6 left">
+      <img src="./media/cafe-grano 1.jpg" alt="beans" class="w-100 rounded">
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row p-5 bg-footer text-dark">
+    <div class="col-xs-12 col-md-6 col-lg-3 h2">Contacto</div>
+    <div class="col-xs-12 col-md-6 col-lg-3"><a href="https://github.com/SebastianVidelaHoltz" target="_blank" class="text-dark">GitHub</a></div>
+  </div>
+</div>
 
 <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
 </body>

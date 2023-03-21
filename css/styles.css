@@ -9,20 +9,14 @@
 
 /*Estilos de reset*/
 *{
-    margin: 0;
-    
+    margin: 0;   
 }
-
+body{
+  background-color: #ffcab4;
+}
 .bg-orange{
-  background: #ff6427;
+  background: #ff9257;
 }
-.nav-bg {
-    
-    background-color: #A86C38;
-    height: 50px;
-    position: relative;
-    top: 0;
-  }
   
   ul {
     padding: 10px;
@@ -44,18 +38,12 @@
     text-decoration: none;
     font-size: 25px;
   }
-  a:hover{
-    color: #187fb5;
-
-  }
+ 
   
   
   
 /*Estilos generales*/
-body{
-  background-color: #C0AFA0;
- 
-}
+
 .carousel{
   width: 50%;
   height: 50%;
@@ -66,8 +54,8 @@ h1{
   text-align: center;
   padding-top: 50px;
 }
-footer{
-  width: 100%;
+.bg-footer{
+  background-color: #ff9257;
 }
 /*Estilos de Index */
 .titulo-index{
@@ -86,6 +74,7 @@ footer{
   font-size: 18px ;
 
 }
+
 
 
 .seccion-queEs{
