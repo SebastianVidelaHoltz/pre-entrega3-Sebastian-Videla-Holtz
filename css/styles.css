@@ -103,6 +103,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.img-card{
+    width: 286px;
+    height: 252px;
+}
 
 .contenedor {
   overflow: hidden;
