@@ -57,9 +57,9 @@ h1 {
 
 .bg-footer {
   background: #561643;
-  background: linear-gradient(90deg,#561643 0%, #6c0e23 80%);
-  background: -webkit-linear-gradient(90deg,#561643 0%, #6c0e23 80%);
-  background: -moz-linear-gradient(90deg,#561643 0%, #6c0e23 80%);
+  background: linear-gradient(90deg, #561643 0%, #6c0e23 80%);
+  background: -webkit-linear-gradient(90deg, #561643 0%, #6c0e23 80%);
+  background: -moz-linear-gradient(90deg, #561643 0%, #6c0e23 80%);
 }
 
 /*Estilos de Index */
@@ -70,8 +70,6 @@ h1 {
   background-position: center bottom -200px;
   background-size: cover;
 }
-
-
 
 /*Estilos de Variedades*/
 .titulo-variedades {
@@ -94,24 +92,28 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.img-card{
-    width: 286px;
-    height: 252px;
+
+.img-card {
+  width: 286px;
+  height: 252px;
 }
-.bg-card{
-background-color: var(--color-second);    
+
+.bg-card {
+  background-color: var(--color-second);
 }
-.shadow-card{
-  box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
--webkit-box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
--moz-box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
+
+.shadow-card {
+  box-shadow: 10px 12px 11px -1px rgba(196, 32, 33, 0.51);
+  -webkit-box-shadow: 10px 12px 11px -1px rgba(196, 32, 33, 0.51);
+  -moz-box-shadow: 10px 12px 11px -1px rgba(196, 32, 33, 0.51);
 }
-.btn-card{
+
+.btn-card {
   background-color: var(--color-fourth);
 }
 
-
 /*Estilos de página3*/
 /*Estilos de página4*/
+
 
 /*# sourceMappingURL=styles.css.map */
