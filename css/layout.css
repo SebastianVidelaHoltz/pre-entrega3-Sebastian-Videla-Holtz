@@ -1,0 +1,62 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+.page-header {
+    background-color: #dd4814;
+    color: white;
+    margin-top: 0;
+    text-align: center;
+    padding: 7.5% 0;
+}
+footer {
+    background-color: #dd4814;
+    text-align: center;
+    color: white;
+    padding: 2.5%;
+}
+footer a {
+    color: white;
+    border-bottom: 1px dotted white;
+}
+footer a:hover, footer a:active, footer a:focus {
+    color: white;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+.text-picture {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.text-picture.text-picture--gray-bg {
+    background-color: #eee;
+}
+.text-picture .text-picture__text h2 {
+    margin-top: 0;
+}
+@media (min-width: 768px) {
+    .text-picture .text-picture__text p:last-child {
+        margin-bottom: 0;
+   }
+}
+.text-picture .text-picture__picture {
+    text-align: center;
+}
+.text-picture .text-picture__picture img {
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .row--flex {
+        display: flex;
+   }
+    .row--flex .row--flex__col {
+        align-self: flex-start;
+   }
+    .row--flex .row--flex__col--center {
+        align-self: center;
+   }
+    .row--flex .row--flex__col--bottom {
+        align-self: flex-end;
+   }
+}

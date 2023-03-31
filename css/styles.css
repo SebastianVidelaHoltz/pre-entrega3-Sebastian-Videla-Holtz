@@ -1,11 +1,11 @@
 @charset "UTF-8";
 :root {
-  --color-prime:#A84D00;
-  --color-second:#a85d1c;
-  --color-third:#a86c38;
-  --color-fourth:#A87B54;
-  --color-fifth:#A88A70;
-  --color-sixth:#A8998C;
+  --color-prime:#6C0E23;
+  --color-second:#c42021;
+  --color-third:#561643;
+  --color-fourth:#3c1742;
+  --color-fifth:#F9DCDE;
+  --color-sixth:#981722;
 }
 
 /*Estilos de reset*/
@@ -14,11 +14,11 @@
 }
 
 body {
-  background-color: #ffcab4;
+  background-color: var(--color-fifth);
 }
 
-.bg-orange {
-  background: #6C0E23;
+.bg-prime {
+  background: var(--color-prime);
 }
 
 ul {
@@ -56,7 +56,10 @@ h1 {
 }
 
 .bg-footer {
-  background-color: #6C0E23;
+  background: #561643;
+  background: linear-gradient(90deg,#561643 0%, #6c0e23 80%);
+  background: -webkit-linear-gradient(90deg,#561643 0%, #6c0e23 80%);
+  background: -moz-linear-gradient(90deg,#561643 0%, #6c0e23 80%);
 }
 
 /*Estilos de Index */
@@ -68,19 +71,7 @@ h1 {
   background-size: cover;
 }
 
-.parrafo-obj {
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  font-size: 18px;
-}
 
-.seccion-queEs {
-  font-size: 20px;
-  box-sizing: border-box;
-  width: 700px;
-  height: 700px;
-}
 
 /*Estilos de Variedades*/
 .titulo-variedades {
@@ -108,7 +99,15 @@ h1 {
     height: 252px;
 }
 .bg-card{
-background-color: #F3FFB9;    
+background-color: var(--color-second);    
+}
+.shadow-card{
+  box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
+-webkit-box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
+-moz-box-shadow: 10px 12px 11px -1px rgba(196,32,33,0.51);
+}
+.btn-card{
+  background-color: var(--color-fourth);
 }
 
 

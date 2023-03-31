@@ -5,8 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/layout.css">
 </head>
 <body>
-    
+    <header class="page-header">
+        <div class="container">
+          <h1>Bootstrap Text and Picture Components</h1>
+          <p class="lead">Flexbox Layout Examples</p>
+        </div>
+      </header>
+      
+      <div class="text-picture">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 text-picture__text">
+              <h2>Default Layout <small>without Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-picture text-picture--gray-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-sm-push-6 text-picture__text">
+              <h2>Default Layout <small>without Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>  
+      </div>
+      
+      <div class="text-picture">
+        <div class="container">
+          <div class="row row--flex">
+            <div class="col-sm-6 row--flex__col--center text-picture__text">
+              <h2>Center Aligned <small>with Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-picture text-picture--gray-bg">
+        <div class="container">
+          <div class="row row--flex">
+            <div class="col-sm-6 row--flex__col--center col-sm-push-6 text-picture__text">
+              <h2>Center Aligned <small>with Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-picture">
+        <div class="container">
+          <div class="row row--flex">
+            <div class="col-sm-6 row--flex__col--bottom text-picture__text">
+              <h2>Bottom Aligned <small>with Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-picture text-picture--gray-bg">
+        <div class="container">
+          <div class="row row--flex">
+            <div class="col-sm-6 row--flex__col--bottom col-sm-push-6 text-picture__text">
+              <h2>Bottom Aligned <small>with Flexbox</small></h2>
+              <p>
+                Ut sed congue massa. Cras eu turpis lacinia, ultricies ipsum fermentum, consectetur ipsum. Integer vestibulum a nunc noipsum. Integer vestibulum a nunc non facilisis.
+              </p>
+            </div>
+            <div class="col-sm-6 col-sm-pull-6 text-picture__picture">
+              <img src="http://placehold.it/640x340/?text=Image" alt="Image" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <p>This is a pen by <a href="https://codepen.io/danbhala">Dan Stuart</a>.</p>
+      </header>
 </body>
 </html>
