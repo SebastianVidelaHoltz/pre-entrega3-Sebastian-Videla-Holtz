@@ -47,10 +47,6 @@ a {
 }
 
 /*Estilos generales*/
-.carousel {
-  width: 50%;
-  height: 50%;
-}
 
 h1 {
   color: var(--color-fifth);
@@ -93,13 +89,13 @@ h1 {
 
 /*Estilos de Variedades*/
 .titulo-variedades {
-  margin: 0;
-  width: 100%;
-  height: 200px;
   background-image: url(../media/cafe-menu-types.jpg);
   background-position: center bottom -70px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 250px;
+  margin-bottom: 0;
+  padding-top: 50px;  
 }
 
 /*Estilos de Métodos*/
@@ -109,6 +105,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
+  margin-bottom: 0;
+  padding-top: 50px;  
 }
 .border-p{
   border: 2px solid var(--color-fourth);
@@ -204,6 +202,9 @@ border: none;
   } 
   .animate__animated.animate__slideInDown{
     --animate-duration: 1.5s;
+  }
+  .animate__animated.animate__slideInUp{
+    --animate-duration:2s;
   }
   .animate__animated.animate__rotateIn{
     --animate-duration:2s;
