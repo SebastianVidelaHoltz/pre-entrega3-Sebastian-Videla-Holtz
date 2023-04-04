@@ -43,6 +43,8 @@ footer a:hover, footer a:active, footer a:focus {
     text-align: center;
 }
 .text-picture .text-picture__picture img {
+    width: 640px;
+  height: 340px;
     margin-left: auto;
     margin-right: auto;
 }
