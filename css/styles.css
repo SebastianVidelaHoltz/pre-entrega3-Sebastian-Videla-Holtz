@@ -12,6 +12,10 @@
 * {
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 body {
   background: #FEAC5E;  /* fallback for old browsers */
@@ -41,6 +45,7 @@ li {
 }
 
 a {
+  font-size: 20px;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -154,7 +159,7 @@ h1 {
 /*Estilos de Métodos*/
 .titulo-metodos {
   background-image: url(../media/cup-coffee-making.jpg);
-  background-position: center bottom;
+  background-position: center bottom -70px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
@@ -258,6 +263,7 @@ border: none;
     --animate-duration: 1.5s;
   }
   .animate__animated.animate__slideInUp{
+
     --animate-duration:2s;
   }
   .animate__animated.animate__rotateIn{
