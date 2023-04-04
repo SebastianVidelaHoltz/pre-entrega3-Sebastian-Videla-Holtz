@@ -41,9 +41,51 @@ li {
 }
 
 a {
-  color: var(--color-fifth);
-  text-decoration: none;
-  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+
+a::before,
+a::after {
+ content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+a::before {
+  background-color: #54b3d6;
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+a::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #54b3d6;
+}
+
+a:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+a:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+a span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+a:hover span {
+  transform: translate3d(-200%, 0, 0);
 }
 
 /*Estilos generales*/
@@ -71,6 +113,8 @@ h1 {
     margin-top: 0;
     text-align: center;
     padding: 7.5% 0;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
+
 }
 .text-picture {
   padding-top: 5%;
@@ -87,6 +131,7 @@ h1 {
   border-radius: 10px;
 }
 
+
 /*Estilos de Variedades*/
 .titulo-variedades {
   background-image: url(../media/cafe-menu-types.jpg);
@@ -95,7 +140,15 @@ h1 {
   background-size: cover;
   height: 250px;
   margin-bottom: 0;
-  padding-top: 50px;  
+  padding-top: 50px;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
+}
+.text-picture__img img {
+  width: 300px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 /*Estilos de Métodos*/
@@ -107,6 +160,7 @@ h1 {
   height: 250px;
   margin-bottom: 0;
   padding-top: 50px;  
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
 }
 .border-p{
   border: 2px solid var(--color-fourth);
@@ -167,8 +221,8 @@ border: none;
 .pulse:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
