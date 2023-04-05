@@ -5,7 +5,7 @@
   --color-second:#c42021;
   --color-third:#561643;
   --color-fourth:#3c1742;
-  --color-fifth:#F9DCDE;
+  --color-fifth:#F3FFB9;
   --color-sixth:#981722;
 }
 
@@ -15,8 +15,21 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: var(--color-fifth);
+  background: #FEAC5E;
+
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E);
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .bg-prime {
@@ -26,11 +39,16 @@ body {
 ul {
   padding: 10px;
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+}
+
+ol {
+  font-size: 18px;
+  text-align: left;
+  border: 1px solid var(--color-second);
+  border-radius: 7px;
 }
 
 li {
@@ -39,23 +57,65 @@ li {
 }
 
 a {
-  color: floralwhite;
-  text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+
+  &::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  &::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+
+  &:hover {
+    &::before {
+      transform-origin: 0% 50%;
+      transform: scaleX(1);
+    }
+
+    &::after {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  &:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
 }
 
 /*Estilos generales*/
 
-.carousel {
-  width: 50%;
-  height: 50%;
-}
-
 h1 {
-  color: #187fb5;
+  color: var(--color-fifth);
   font-size: 60px;
   text-align: center;
-  padding-top: 50px;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
 }
 
 .bg-footer {
@@ -67,42 +127,101 @@ h1 {
 
 /*Estilos de Index */
 
+.header-content {
+  padding: 100px 0 150px 0;
+}
+
 .titulo-index {
-  width: 100%;
-  height: 250px;
-  background-image: url(../media/cafe-grano\ 1.jpg);
-  background-position: center bottom -200px;
-  background-size: cover;
+  background-image: url(../media/cafe-index-background.jpg);
+  margin-top: 0;
+  text-align: center;
+  padding: 7.5% 0;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
+}
+
+.text-picture {
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  .text-picture__picture {
+    text-align: center;
+
+    img {
+      width: 640px;
+      height: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+    }
+  }
 }
 
 /*Estilos de Variedades*/
 
 .titulo-variedades {
-  margin: 0;
-  width: 100%;
-  height: 200px;
   background-image: url(../media/cafe-menu-types.jpg);
   background-position: center bottom -70px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 250px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
+}
+
+.text-picture__img img {
+  width: 300px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
 }
 
 /*Estilos de Métodos*/
 
 .titulo-metodos {
-  margin: 0%;
-  width: 100%;
-  height: 250px;
   background-image: url(../media/cup-coffee-making.jpg);
-  background-position: center bottom -200px;
+  background-position: center bottom -70px;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 250px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  text-shadow: rgb(196, 32, 33) 5px 2px 4px;
+}
+
+.border-p {
+  border: 2px solid var(--color-fourth);
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.prg-methods {
+  font-size: 18px;
+  text-align: center;
 }
 
 .img-card {
   width: 286px;
   height: 252px;
 }
+
+/*Estilos de Curiosidades*/
+
+.img-curiosities {
+  width: 660px;
+  height: 350px;
+  border-radius: 6px;
+  margin-left: 100px;
+}
+
+.prg-curiosities {
+  font-size: 22px;
+  text-align: center;
+}
+
+/*Estilos del botón de las cards*/
 
 .bg-card {
   background-color: var(--color-second);
@@ -115,10 +234,114 @@ h1 {
 }
 
 .btn-card {
-  background-color: var(--color-fourth);
+  color: var(--color-fifth);
+  font-weight: 300;
+  font-size: 20px;
+  background-color: var(--color-third);
+  padding: 10px 30px;
+  border: solid #0066cc 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1917ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-transform: lowercase;
 }
 
-/*Estilos de página3*/
-/*Estilos de página4*/
+.btn:hover {
+  transition: 1917ms;
+  padding: 10px 40px;
+  transform: translateY(-8px);
+  background-color: var(--color-fifth);
+  color: var(--color-third);
+  border: none;
+}
+
+/*animaciones*/
+
+.pulse:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.animate__animated {
+  &.animate__slideInDown {
+    --animate-duration:1.5s;
+  }
+
+  &.animate__slideInUp, &.animate__rotateIn, &.animate__fadeInLeft {
+    --animate-duration:2s;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
