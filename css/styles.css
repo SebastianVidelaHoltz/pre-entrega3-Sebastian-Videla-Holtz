@@ -7,6 +7,9 @@
   --color-fifth:#F3FFB9;
   --color-sixth:#981722;
 }
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  
+}
 
 /*Estilos de reset*/
 * {
@@ -20,10 +23,8 @@ html {
 body {
   background: #FEAC5E;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #4BC0C8, #C779D0, #FEAC5E);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(131,58,180);
+  background: linear-gradient(184deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -310,4 +311,3 @@ h1 {
 }
 
 
-/*# sourceMappingURL=styles.css.map */
